@@ -1,0 +1,40 @@
+[g~="inline"] {
+	display: inline-flex;
+}
+
+[g~="block"] {
+	display: inline-block;
+}
+
+/* Padding */
+
+[g~="xsm-padding"] {
+	padding: .5rem
+}
+
+[g~='sm-padding'] {
+	padding: 1rem;
+}
+
+[g~='md-padding'] {
+	padding: 2rem;
+}
+
+[g~='lg-padding'] {
+	padding: 3rem;
+}
+
+[g~="xlg-padding"] {
+	padding: 4rem
+}
+
+[fixed], [g~="fixed"] {
+	position: fixed;
+}
+
+/* Size */
+
+[g~="large"] {
+	padding: 1.5rem 2.5rem;
+	font-size: 1.1rem;
+}

@@ -1,0 +1,166 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+section {
+	@include border-box;
+	@include display-flex;
+	@include direction-row;
+	@include flex-wrap;
+	@include flex-basis(100%);
+	max-width: 100%;
+}
+
+section[g~='reverse'] {
+	@include reverse-direction-row;
+}
+
+[content] {
+	flex: 1;
+}
+
+[g~="1"],
+[g~="2"],
+[g~="3"],
+[g~="4"],
+[g~="5"],
+[g~="6"],
+[g~="7"],
+[g~="8"],
+[g~="9"],
+[g~="10"],
+[g~="11"],
+[g~="12"] {
+
+	@include border-box;
+	display: -webkit-box;
+	@include display-flex;
+	@include column-flex-direction;
+	-webkit-flex-grow: 0;
+	flex-grow: 0;
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+}
+
+@include grid_columns;
+@include grid_push_left;
+@include grid_push_right;
+
+[g~="start"] {
+	@include start;
+}
+
+[g~="center"], [center], [g~="centered"], [centered] {
+	@include centered;
+}
+
+[g~="left"] {
+	text-align: left;
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+
+[g~="right"] {
+	text-align: right;
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+}
+
+[g~="end"] {
+	@include end;
+}
+
+[g~="top"] {
+	@include top;
+}
+
+[g~="middle"] {
+	@include middle;
+}
+
+[g~="bottom"] {
+	@include bottom;
+}
+
+[g~="around"] {
+	@include around;
+}
+
+[g~="between"] {
+	@include between;
+}
+
+[g~="first"] {
+	@include first;
+}
+
+[g~="last"] {
+	@include last;
+}
+
+[g~="xlg-container"] {
+	max-width: $xlg-breakpoint;
+}
+
+[g~='lg-container'] {
+	max-width: $lg-breakpoint;
+}
+
+[g~='md-container'] {
+	max-width: $md-breakpoint;
+}
+
+[g~='sm-container'] {
+	max-width: $sm-breakpoint;
+}
+
+[g~='xsm-container'] {
+	max-width: $xsm-breakpoint;
+}
+
+@media screen and (max-width: $lg-breakpoint) {
+	[g~="lg-container"] {
+		max-width: $md-breakpoint;
+	}
+	[g~="xlg-container"] {
+		max-width: $lg-breakpoint;
+	}
+}
+
+@media screen and (max-width: $md-breakpoint) {
+	header > ul {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $sm-breakpoint) {
+
+	@for $i from 1 through 12 {
+		[g~="#{$i}"] {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+
+	[g~="lg-container"] {
+		max-width: $md-breakpoint;
+	}
+	[g~="xlg-container"] {
+		max-width: $md-breakpoint;
+	}
+	[g~="md-container"] {
+		max-width: $md-breakpoint;
+	}
+
+}
+
