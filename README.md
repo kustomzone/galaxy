@@ -16,3 +16,6 @@ Galaxy is the modern, semantic and beautiful front-end framework.
 
 
 ## Reporting a Bug
+
+
+Galaxy was created and licensed under the [MIT](//tldrlegal.com/license/mit-license).
