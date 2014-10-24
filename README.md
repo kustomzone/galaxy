@@ -1,4 +1,4 @@
-Galaxy is the front-end framework for web artisans	
+Galaxy is the modern, semantic and beautiful front-end framework.
 ======
 
 # Table of Contents
