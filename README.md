@@ -12,6 +12,7 @@ Galaxy is the front-end framework for web artisans
 
 ## Installation
 
-CSS: 'https://cdn.rawgit.com/Magmoz/galaxy/master/galaxy.min.css'
+`<link rel="stylesheet" href="//cdn.rawgit.com/Magmoz/galaxy/master/galaxy.min.css">`
+
 
 ## Reporting a Bug
