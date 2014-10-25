@@ -1,3 +1,5 @@
+<img src="http://img.shields.io/badge/style-flat--squared-green.svg?style=flat-square" alt="Version">
+
 Galaxy is the modern, semantic and beautiful front-end framework.
 ======
 
