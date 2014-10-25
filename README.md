@@ -1,6 +1,6 @@
-<img src="//img.shields.io/npm/dm/localeval.svg/style-flat--squared-green.svg?style=flat-square" alt="Version">
+<img src="http://img.shields.io/npm/dm/localeval.svg/style-flat--squared-green.svg?style=flat-square" alt="Version">
 
-<img src="//galaxyui.com/img/tagline.png" alt="front-end-framework-for-the-modern-web">
+<img src="http://galaxyui.com/img/tagline.png" alt="front-end-framework-for-the-modern-web">
 ======
 
 # Table of Contents
