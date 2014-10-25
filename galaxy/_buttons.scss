@@ -4,31 +4,27 @@
 
 button, input[type="submit"] {
 	@include button-colors($default-color);
-	padding: 1rem 2rem;
+	padding: .8rem 2rem;
 	font-weight: 400;
 	font-size: 1rem;
 	text-align: center;
 	cursor: pointer;
 	@include small-border;
 	white-space: nowrap;
-	opacity: .85;
+	opacity: .8;
 	&:hover {
-		background: darken($default-color, 10);
 		filter: none;
 		box-shadow: none;
 	}
 	&:active {
-		background: darken($default-color, 15);
-		box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		opacity: .8;
 	}
 	&[disabled] {
 		border: 0;
+		background-image: none;
 		opacity: .4;
 		cursor: not-allowed;
 		box-shadow: none;
-	}
-	&[g="large"] {
-		font-size: 1.3rem;
 	}
 	&[g~="grouped"] {
 		position: relative;
@@ -59,42 +55,18 @@ button, input[type="submit"] {
 
 [g~="primary"] {
 	@include button-colors($primary-color);
-	&:hover {
-		background: lighten($primary-color, 10);
-	}
-	&:active {
-		background: darken($primary-color, 15);
-	}
 }
 
 [g~="success"] {
 	@include button-colors($success-color);
-	&:hover {
-		background: lighten($success-color, 10);
-		&:active {
-			background: darken($success-color, 15);
-		}
-	}
 }
 
 [g~="warning"] {
 	@include button-colors($warning-color);
-	&:hover {
-		background: lighten($warning-color, 10);
-		&:active {
-			background: darken($warning-color, 15);
-		}
-	}
 }
 
 [g~="danger"] {
 	@include button-colors($danger-color);
-	&:hover {
-		background: lighten($danger-color, 10);
-		&:active {
-			background: darken($danger-color, 15);
-		}
-	}
 }
 
 [g~="grouped"] {

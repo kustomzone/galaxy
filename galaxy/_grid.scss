@@ -52,12 +52,11 @@ section[g~='reverse'] {
 	@include start;
 }
 
-[g~="center"], [center], [g~="centered"], [centered] {
+[g~="center"], [g~="centered"] {
 	@include centered;
 }
 
 [g~="left"] {
-	text-align: left;
 	display: -webkit-flex;
    display: flex;
    -webkit-flex-direction: row;
@@ -67,14 +66,14 @@ section[g~='reverse'] {
 }
 
 [g~="right"] {
-	text-align: right;
-	display: -webkit-flex;
+	   display: -webkit-flex;
    display: flex;
    -webkit-flex-direction: row;
    flex-direction: row;
    -webkit-justify-content: flex-end;
    justify-content: flex-end;
 }
+
 
 [g~="end"] {
 	@include end;
@@ -128,15 +127,6 @@ section[g~='reverse'] {
 	max-width: $xsm-breakpoint;
 }
 
-@media screen and (max-width: $lg-breakpoint) {
-	[g~="lg-container"] {
-		max-width: $md-breakpoint;
-	}
-	[g~="xlg-container"] {
-		max-width: $lg-breakpoint;
-	}
-}
-
 @media screen and (max-width: $md-breakpoint) {
 	header > ul {
 		display: none;
@@ -144,8 +134,11 @@ section[g~='reverse'] {
 }
 
 @media screen and (max-width: $sm-breakpoint) {
-
-	@for $i from 1 through 12 {
+	[g~="1"] {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	@for $i from 2 through 12 {
 		[g~="#{$i}"] {
 			flex-basis: 100%;
 			max-width: 100%;

@@ -16,18 +16,17 @@ body {
 }
 
 a {
-	opacity: 1;
+	color: inherit;
+	opacity: $lg-opacity;
 	text-decoration: none;
-	color: $primary-color;
 }
 
 a:hover {
-	opacity: $lg-opacity;
+	opacity: 1;
 }
 
 p {
 	font-size: 1.3em;
-	line-height: 1.3em;
 }
 
 i:after {
@@ -88,7 +87,6 @@ code {
 	padding: 5px;
 }
 
-aside {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
-
 }

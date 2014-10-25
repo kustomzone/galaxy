@@ -73,7 +73,6 @@ $lg-padding: 2rem;
 	-webkit-align-items: center;
 	align-items: center;
 	text-align: center;
-	margin: 0 auto;
 }
 
 @mixin display-flex {
@@ -174,7 +173,7 @@ $lg-padding: 2rem;
 /* Navbar */
 
 $low-transparency: .9;
-$nav-color: #000;
+$nav-color: #eee;
 
 /* Borders */
 
