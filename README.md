@@ -12,11 +12,10 @@ Galaxy is the modern, semantic and beautiful front-end framework.
 
 ## Installation
 
-### 1. Use a CDN
-Include this in your file's header:
+You can either clone Galaxy to your project, or use the CDN linking to the latest version:
 `<link rel="stylesheet" href="//cdn.rawgit.com/Magmoz/galaxy/master/galaxy.min.css">`
 This will always link to the latest version of Galaxy.
-### 1. Clone the repo
+
 
 ## Reporting a Bug
 
