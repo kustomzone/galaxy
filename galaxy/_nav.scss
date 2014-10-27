@@ -12,13 +12,14 @@ header {
 	& ul {
 		& li {
 			margin: 0 2rem;
+			color: darken(contrast-color($nav-color), 10);
 				&:hover:not([g~="active"]) {
 				@if (lightness($nav-color) > 50) {
 						/* Lighter navs should have darker feedback */
-						color: darken(contrast-color($nav-color), 50);
+						color: darken(contrast-color($nav-color), 10);
 					} @else {
 						/* Darker navs should have brighter feedback */
-						color: lighten(contrast-color($nav-color), 50);
+						color: lighten(contrast-color($nav-color), 10);
 					}
 				}
 				&:active, [g~="active"] {

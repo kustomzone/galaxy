@@ -1,13 +1,14 @@
 @charset "UTF-8";
 /* FRAMEWORK */
 /* Sass variables configuration */
+/* COLOR */
+/* Borders */
 /* Breakpoints */
 /* Shadows */
 /* Transparency */
 /* Padding */
 /* Galaxy Grid */
 /* Navbar */
-/* Borders */
 /* Buttons */
 /* If background is dark, then switch the color to #fff; */
 /* Typography */
@@ -714,13 +715,14 @@ header {
   margin: 0;
   padding: 1em;
   opacity: 1;
-  background-color: #eee;
-  color: black; }
+  background-color: #1683CC;
+  color: gray; }
   header ul li {
-    margin: 0 2rem; }
+    margin: 0 2rem;
+    color: #e6e6e6; }
     header ul li:hover:not([g~="active"]) {
-      /* Lighter navs should have darker feedback */
-      color: black; }
+      /* Darker navs should have brighter feedback */
+      color: white; }
     header ul li:active, header ul li [g~="active"] {
       color: #43A6EB; }
   header[g~="fixed"] {
