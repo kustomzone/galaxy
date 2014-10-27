@@ -16,8 +16,8 @@ body {
 }
 
 a {
-	color: inherit;
-	opacity: $lg-opacity;
+	color: $primary-color;
+	opacity: $low-opacity;
 	text-decoration: none;
 }
 
@@ -26,7 +26,7 @@ a:hover {
 }
 
 p {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 i:after {
@@ -38,7 +38,7 @@ $headings: h1 h2 h3 h4 h5 h6;
 	$i: index($headings, $heading);
 	$i-weight: $i * 100;
 	#{$heading} {
-		font-size: 3em - $i / 3;
+		font-size: 2.7em - $i / 3;
 		@if ($i-weight < 200) {
 			font-weight: 500 - $i-weight;
 		} @else {

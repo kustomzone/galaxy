@@ -10,7 +10,7 @@ header {
 	color: darken(contrast-color($nav-color), 50);
 
 	& ul {
-		& li {
+		& li, a {
 			margin: 0 2rem;
 			color: darken(contrast-color($nav-color), 10);
 				&:hover:not([g~="active"]) {
@@ -50,6 +50,7 @@ footer {
 	margin-top: 3rem;
 	padding: 5rem 0;
 	text-align: center;
+	border-top: lighten(contrast-color($footer-background), 90) 1px solid;
 	color: darken(contrast-color($footer-background), 20);
 	background: $footer-background;
 }

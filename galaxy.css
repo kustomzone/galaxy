@@ -33,7 +33,7 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: inherit;
+  color: #43A6EB;
   opacity: 0.9;
   text-decoration: none; }
 
@@ -41,33 +41,33 @@ a:hover {
   opacity: 1; }
 
 p {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 i:after {
   content: " "; }
 
 h1 {
-  font-size: 2.66667em;
+  font-size: 2.36667em;
   font-weight: 400; }
 
 h2 {
-  font-size: 2.33333em;
+  font-size: 2.03333em;
   font-weight: 300; }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 300; }
 
 h4 {
-  font-size: 1.66667em;
+  font-size: 1.36667em;
   font-weight: 300; }
 
 h5 {
-  font-size: 1.33333em;
+  font-size: 1.03333em;
   font-weight: 300; }
 
 h6 {
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 300; }
 
 hr {
@@ -590,6 +590,10 @@ button, input[type="submit"] {
   border: #1890e3 1px solid;
   background: #43A6EB;
   color: white; }
+  [g~="primary"]:hover {
+    background: #71bcf0; }
+  [g~="primary"]:active {
+    background: #051b2a; }
 
 [g~="success"] {
   border: #64a71a 1px solid;
@@ -717,13 +721,13 @@ header {
   opacity: 1;
   background-color: #1683CC;
   color: gray; }
-  header ul li {
+  header ul li, header ul a {
     margin: 0 2rem;
     color: #e6e6e6; }
-    header ul li:hover:not([g~="active"]) {
+    header ul li:hover:not([g~="active"]), header ul a:hover:not([g~="active"]) {
       /* Darker navs should have brighter feedback */
       color: white; }
-    header ul li:active, header ul li [g~="active"] {
+    header ul li:active, header ul li [g~="active"], header ul a:active, header ul a [g~="active"] {
       color: #43A6EB; }
   header[g~="fixed"] {
     width: 100%; }
@@ -743,8 +747,9 @@ footer {
   margin-top: 3rem;
   padding: 5rem 0;
   text-align: center;
-  color: #cccccc;
-  background: #000; }
+  border-top: #e6e6e6 1px solid;
+  color: black;
+  background: #fff; }
 
 /* Drop down */
 [g~='caret'] {

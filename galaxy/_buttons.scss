@@ -55,6 +55,12 @@ button, input[type="submit"] {
 
 [g~="primary"] {
 	@include button-colors($primary-color);
+	&:hover {
+		background: lighten($primary-color, 10);
+	}
+	&:active {
+		background: darken($primary-color, 50);
+	}
 }
 
 [g~="success"] {
