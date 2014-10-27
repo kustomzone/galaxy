@@ -7,9 +7,11 @@ header {
 	padding: 1em;
 	opacity: 1;
 	background-color: $nav-color;
+	display: flex;
 	color: darken(contrast-color($nav-color), 50);
 
 	& ul {
+		@include align-items(center);
 		& li, a {
 			margin: 0 2rem;
 			color: darken(contrast-color($nav-color), 10);
@@ -35,13 +37,6 @@ header {
 
 [g~="active"] {
 	color: $primary-color;
-}
-
-[logo] {
-	float: left;
-	width: auto;
-	max-height: 50px;
-	padding: 0 50px 0 50px;
 }
 
 footer {

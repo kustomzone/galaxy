@@ -745,26 +745,30 @@ header {
   padding: 1em;
   opacity: 1;
   background-color: #1683CC;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: gray; }
-  header ul li, header ul a {
-    margin: 0 2rem;
-    color: #e6e6e6; }
-    header ul li:hover:not([g~="active"]), header ul a:hover:not([g~="active"]) {
-      /* Darker navs should have brighter feedback */
-      color: white; }
-    header ul li:active, header ul li [g~="active"], header ul a:active, header ul a [g~="active"] {
-      color: #43A6EB; }
+  header ul {
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    header ul li, header ul a {
+      margin: 0 2rem;
+      color: #e6e6e6; }
+      header ul li:hover:not([g~="active"]), header ul a:hover:not([g~="active"]) {
+        /* Darker navs should have brighter feedback */
+        color: white; }
+      header ul li:active, header ul li [g~="active"], header ul a:active, header ul a [g~="active"] {
+        color: #43A6EB; }
   header[g~="fixed"] {
     width: 100%; }
 
 [g~="active"] {
   color: #43A6EB; }
-
-[logo] {
-  float: left;
-  width: auto;
-  max-height: 50px;
-  padding: 0 50px 0 50px; }
 
 footer {
   width: 100%;

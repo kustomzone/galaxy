@@ -1,3 +1,5 @@
+/* --- GRID */
+
 body {
 	display: flex;
 	min-height: 100vh;
@@ -7,8 +9,8 @@ body {
 section {
 	@include border-box;
 	@include display-flex;
-	@include direction-row;
-	@include flex-wrap;
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
 	@include flex-basis(100%);
 	max-width: 100%;
 	padding-top: 1.5rem;
@@ -17,7 +19,7 @@ section {
 }
 
 section[g~='reverse'] {
-	@include reverse-direction-row;
+	@include flex-direction(row-reverse);
 }
 
 [content] {
@@ -40,7 +42,7 @@ section[g~='reverse'] {
 	@include border-box;
 	display: -webkit-box;
 	@include display-flex;
-	@include column-flex-direction;
+	@include flex-direction(column);
 	-webkit-flex-grow: 0;
 	flex-grow: 0;
 	-webkit-flex-shrink: 0;
@@ -52,18 +54,17 @@ section[g~='reverse'] {
 @include grid_push_right;
 
 [g~="start"] {
-	@include start;
+	@include justify-content(start);
 }
 
 [g~="center"], [g~="centered"] {
-	@include centered;
+	@include justify-content(centered);
 }
 
 [g~="left"] {
 	display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
+   @include flex-direction(row);
    -webkit-justify-content: flex-start;
    justify-content: flex-start;
 }
@@ -71,43 +72,34 @@ section[g~='reverse'] {
 [g~="right"] {
 	   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
+   @include flex-direction(row);
    -webkit-justify-content: flex-end;
    justify-content: flex-end;
 }
 
 
 [g~="end"] {
-	@include end;
+	@include justify-content(end);
 }
 
 [g~="top"] {
-	@include top;
+	@include align-items(flex-start);
 }
 
 [g~="middle"] {
-	@include middle;
+	@include align-items(middle);
 }
 
 [g~="bottom"] {
-	@include bottom;
+	@include align-items(bottom);
 }
 
 [g~="around"] {
-	@include around;
+	@include justify-content(around);
 }
 
 [g~="between"], [g~="even"] {
-	@include between;
-}
-
-[g~="first"] {
-	@include first;
-}
-
-[g~="last"] {
-	@include last;
+	@include justify-content(space-between);
 }
 
 [g~="xlg-container"] {
@@ -147,10 +139,7 @@ section[g~='reverse'] {
 }
 
 @media screen and (max-width: $sm-breakpoint) {
-	[g~="1"] {
-		flex-basis: 50%;
-		max-width: 50%;
-	}
+
 	@for $i from 2 through 12 {
 		[g~="#{$i}"] {
 			flex-basis: 100%;

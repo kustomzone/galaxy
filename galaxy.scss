@@ -1,25 +1,22 @@
 /* FRAMEWORK */
 
-/* Sass variables configuration */
 @import "galaxy/globals";
-/* Base */
+/* --- BASE */
 @import "galaxy/base";
-/* Grid */
+/* --- GRID */
 @import "galaxy/grid";
-/* Buttons */
+/* --- BUTTONS */
 @import "galaxy/buttons";
-/* Forms */
+/* --- FORMS */
 @import "galaxy/forms";
-/* Navigation */
+/* --- NAVIGATION */
 @import "galaxy/nav";
-/* Prototype */
+/* --- PROTOTYPE */
 @import "galaxy/bem";
-/* Alerts */
+/* --- ALERTS */
 @import "galaxy/alerts";
-/* @import "galaxy/bem"; Optional import for cleaner code */
 
-/* PLUGINS */
-/* Tooltips */
+/* --- PLUGINS */
+/* ==== Tooltips */
 @import "galaxy/plugins/tooltips";
-/* Parallax */
-//@import "galaxy/plugins/parallax";
+/* ==== Parallax */
