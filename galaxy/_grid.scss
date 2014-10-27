@@ -11,6 +11,9 @@ section {
 	@include flex-wrap;
 	@include flex-basis(100%);
 	max-width: 100%;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	justify-content: space-between;
 }
 
 section[g~='reverse'] {
@@ -95,7 +98,7 @@ section[g~='reverse'] {
 	@include around;
 }
 
-[g~="between"] {
+[g~="between"], [g~="even"] {
 	@include between;
 }
 
@@ -130,6 +133,16 @@ section[g~='reverse'] {
 @media screen and (max-width: $md-breakpoint) {
 	header > ul {
 		display: none;
+	}
+	[g~="centered"], [g~="center"] {
+		margin: 0;
+	}
+	[g~="xlg-container"] {
+	max-width: $md-breakpoint;
+	}
+
+	[g~='lg-container'] {
+		max-width: $md-breakpoint;
 	}
 }
 

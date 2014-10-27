@@ -11,13 +11,13 @@ button, input[type="submit"] {
 	cursor: pointer;
 	@include small-border;
 	white-space: nowrap;
-	opacity: .8;
 	&:hover {
 		filter: none;
 		box-shadow: none;
+		background: darken($default-color, 5);
 	}
 	&:active {
-		opacity: .8;
+		background: darken($default-color, 20);
 	}
 	&[disabled] {
 		border: 0;
@@ -59,20 +59,38 @@ button, input[type="submit"] {
 		background: lighten($primary-color, 10);
 	}
 	&:active {
-		background: darken($primary-color, 50);
+		background: darken($primary-color, 15);
 	}
 }
 
 [g~="success"] {
 	@include button-colors($success-color);
+	&:hover {
+		background: lighten($success-color, 10);
+	}
+	&:active {
+		background: darken($success-color, 15);
+	}
 }
 
 [g~="warning"] {
 	@include button-colors($warning-color);
+	&:hover {
+		background: lighten($warning-color, 10);
+	}
+	&:active {
+		background: darken($warning-color, 15);
+	}
 }
 
 [g~="danger"] {
 	@include button-colors($danger-color);
+	&:hover {
+		background: lighten($danger-color, 10);
+	}
+	&:active {
+		background: darken($danger-color, 15);
+	}
 }
 
 [g~="grouped"] {

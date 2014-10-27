@@ -30,6 +30,7 @@ body {
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   -webkit-font-smoothing: antialiased; }
 
 a {
@@ -125,7 +126,10 @@ section {
   flex-wrap: wrap;
   -webkit-flex-basis: 100%;
   flex-basis: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  justify-content: space-between; }
 
 section[g~='reverse'] {
   -webkit-flex-direction: row-reverse;
@@ -414,7 +418,7 @@ section[g~='reverse'] {
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto; }
+  margin: auto; }
 
 [g~="left"] {
   display: -webkit-flex;
@@ -453,7 +457,7 @@ section[g~='reverse'] {
   -webkit-justify-content: space-around;
   justify-content: space-around; }
 
-[g~="between"] {
+[g~="between"], [g~="even"] {
   -webkit-justify-content: space-between;
   justify-content: space-between; }
 
@@ -482,7 +486,16 @@ section[g~='reverse'] {
 
 @media screen and (max-width: 767px) {
   header > ul {
-    display: none; } }
+    display: none; }
+
+  [g~="centered"], [g~="center"] {
+    margin: 0; }
+
+  [g~="xlg-container"] {
+    max-width: 767px; }
+
+  [g~='lg-container'] {
+    max-width: 767px; } }
 @media screen and (max-width: 448px) {
   [g~="1"] {
     flex-basis: 50%;
@@ -556,13 +569,13 @@ button, input[type="submit"] {
   border: #ddd 1px solid;
   border-radius: 3px;
   white-space: nowrap;
-  opacity: .8;
   /* BEM */ }
   button:hover, input[type="submit"]:hover {
     filter: none;
-    box-shadow: none; }
+    box-shadow: none;
+    background: #f2f2f2; }
   button:active, input[type="submit"]:active {
-    opacity: .8; }
+    background: #cccccc; }
   button[disabled], input[type="submit"][disabled] {
     border: 0;
     background-image: none;
@@ -593,22 +606,34 @@ button, input[type="submit"] {
   [g~="primary"]:hover {
     background: #71bcf0; }
   [g~="primary"]:active {
-    background: #051b2a; }
+    background: #1681cc; }
 
 [g~="success"] {
   border: #64a71a 1px solid;
   background: #7ed321;
   color: white; }
+  [g~="success"]:hover {
+    background: #97e245; }
+  [g~="success"]:active {
+    background: #569117; }
 
 [g~="warning"] {
   border: #cd5b00 1px solid;
   background: #FF7201;
   color: white; }
+  [g~="warning"]:hover {
+    background: #ff8e34; }
+  [g~="warning"]:active {
+    background: #b35000; }
 
 [g~="danger"] {
   border: #9d0214 1px solid;
   background: #d0021b;
   color: white; }
+  [g~="danger"]:hover {
+    background: #fd0826; }
+  [g~="danger"]:active {
+    background: #840111; }
 
 [g~="grouped"] {
   width: 100vw; }
