@@ -9,7 +9,7 @@ header {
 	background-color: $nav-color;
 	display: flex;
 	color: darken(contrast-color($nav-color), 50);
-
+	width: 100%;
 	& ul {
 		@include align-items(center);
 		& li, a {

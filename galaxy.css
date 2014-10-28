@@ -739,7 +739,8 @@ header {
   opacity: 1;
   background-color: #1683CC;
   display: flex;
-  color: gray; }
+  color: gray;
+  width: 100%; }
   header ul {
     -webkit-align-items: center;
     align-items: center; }
