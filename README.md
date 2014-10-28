@@ -1,4 +1,4 @@
-<img src="http://img.shields.io/travis/joyent/node.svg/style-flat--squared-green.svg?style=flat-square" alt="Version">
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Magmoz/galaxy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 <img src="http://galaxyui.com/img/tagline.png" alt="front-end-framework-for-the-modern-web">
 ======
@@ -24,5 +24,5 @@ This will always link to the latest version of Galaxy.
 
 Galaxy was created and licensed under the [MIT](//tldrlegal.com/license/mit-license) by [Andy Fang](//twitter.com/andyfang98).
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Magmoz/galaxy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
