@@ -127,7 +127,7 @@ section[g~='reverse'] {
 		display: none;
 	}
 	[g~="centered"], [g~="center"] {
-		margin: 0;
+		margin: auto;
 	}
 	[g~="xlg-container"] {
 	max-width: $md-breakpoint;
