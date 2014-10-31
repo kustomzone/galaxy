@@ -1,8 +1,5 @@
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Magmoz/galaxy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-<img src="http://galaxyui.com/img/tagline.png" alt="front-end-framework-for-the-modern-web">
-======
-
 # Table of Contents
 - [Getting started](#getting-started)
 - [Installation](#installation)
