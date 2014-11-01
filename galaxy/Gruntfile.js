@@ -4,9 +4,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'galaxy.css' : 'galaxy.scss',
-					'css/docs.css' : 'css/docs.scss',
-					'css/home.css' : 'css/home.scss'
+					'galaxy.css' : 'galaxy.scss'
 				}
 			}
 		},

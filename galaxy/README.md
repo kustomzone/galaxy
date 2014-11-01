@@ -6,7 +6,6 @@
 - [Reporting a Bug](#reporting-a-bug)
 
 ## Getting Started
-- []()
 
 
 
