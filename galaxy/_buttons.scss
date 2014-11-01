@@ -76,7 +76,7 @@ button, input[type="submit"] {
 		font-size: 1.3rem;
 	}
 	&[g~="rounded"] {
-		border-radius: 3rem;
+		border-radius: 50%;
 	}
 	& + ul[g~="dropdown"] {
 		display: block;

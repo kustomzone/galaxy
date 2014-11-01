@@ -2,18 +2,25 @@
 
 /* --- BORDERS */
 
+$sm-border-radius: 3px;
+$md-border-radius: 6px;
+$lg-border-radius: 9px;
+$rounded: 50%;
+
+@mixin border-radius($amount) {
+	-webkit-border-radius: $md-border-radius;
+	-moz-border-radius: $md-border-radius;
+	border-radius: $md-border-radius;
+}
+
 @mixin dark-border {
 	border: #ccc 1px solid;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	@include border-radius($md-border-radius);
 }
 
 @mixin light-border {
 	border: #eee 1px solid;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	@include border-radius($md-border-radius);
 }
 
 /* --- BREAKPOINTS */
@@ -23,11 +30,6 @@ $lg-breakpoint: 970px;
 $md-breakpoint: 767px;
 $sm-breakpoint: 448px;
 $xsm-breakpoint: 259px;
-
-/* --- SHADOWS */
-
-$dark-grey: #afafaf;
-$light-grey: #ddd;
 
 /* --- TRANSPARENCY */
 
@@ -221,3 +223,8 @@ $footer-background: #fff;
 [g~="danger"] {
 	@include button-colors($danger-color);
 }
+
+/* --- SHADOW COLORS */
+
+$dark-grey: #afafaf;
+$light-grey: #ddd;
