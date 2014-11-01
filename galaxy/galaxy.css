@@ -710,7 +710,7 @@ input[g~='transparent'] {
     box-shadow: none; }
 
 /* -- MISC */
-label {
+label[for] {
   padding: 1rem;
   cursor: pointer; }
 
@@ -843,14 +843,12 @@ nav[g~="grouped"][g~='dropdown'] > li:hover {
 /* Size */
 /* --- ALERTS */
 /* --- MISC */
-span {
+label:not([for]) {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: 700;
   line-height: 1;
-  background: #f2f2f2;
-  color: #6F6F6F;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
