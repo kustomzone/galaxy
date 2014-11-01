@@ -1,0 +1,22 @@
+/* FRAMEWORK */
+
+@import "galaxy/globals";
+/* --- BASE */
+@import "galaxy/base";
+/* --- GRID */
+@import "galaxy/grid";
+/* --- BUTTONS */
+@import "galaxy/buttons";
+/* --- FORMS */
+@import "galaxy/forms";
+/* --- NAVIGATION */
+@import "galaxy/nav";
+/* --- PROTOTYPE */
+@import "galaxy/bem";
+/* --- ALERTS */
+@import "galaxy/alerts";
+
+/* --- PLUGINS */
+/* ==== Tooltips */
+@import "galaxy/plugins/tooltips";
+/* ==== Parallax */

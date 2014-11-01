@@ -1,0 +1,95 @@
+h1 {
+    color: #43A6EB;
+}
+body {
+	background: #fff;
+}
+
+.jumbotron {
+    min-height: 200px;
+    background-repeat: no-repeat;
+    letter-spacing: 1px;
+    padding: 3rem 1rem;
+
+}
+.jumbotron h1 {
+    padding: 4rem;
+}
+section p {
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.opening {
+    // background: url(/img/backstretch.jpg);
+    color: #fff;
+    background: #1683CC;
+    background-size: cover;
+    min-height: 40rem;
+    width: 100vw;
+    padding: 5rem 1rem;
+}
+
+.tagline {
+    padding-top: 3rem;
+}
+
+
+.pg-canvas {
+    z-index: 1;
+}
+.cta {
+    color: #fff;
+    background: #1683CC;
+    border: #fff 1px solid;
+    opacity: .9;
+    z-index: 2;
+}
+.cta:hover {
+    background: #43A6EB;
+}
+.cta:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.logo {
+    height: 13rem;
+}
+.tagline {
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 480px) {
+    .logo, .tagline {
+        height: auto;
+    }
+}
+.cta-routes {
+    padding: 2rem 2rem;
+    border-bottom: #ddd 1px solid;
+}
+.cta-routes>div:first-child {
+    border-right: #ddd 1px solid;
+    padding: 3rem;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 480px) {
+    .cta-routes>div:first-child {
+        border: 0;
+    }
+}
+.cta-routes>div:last-child {
+    padding-left: 1rem;
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-position-x: 13rem;
+}
+@media screen and (max-width: 480px) {
+    .cta-routes>div:last-child {
+        border: 0;
+    }
+}
+
+section#body {
+	padding-bottom: 3rem;
+	border-top: #ddd 1px solid;
+}
