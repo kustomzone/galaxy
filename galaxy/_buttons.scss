@@ -1,7 +1,7 @@
 /* --- BUTTONS */
 
 *:hover {
-	opacity: 1;
+opacity: 1;
 }
 
 button, input {
@@ -9,7 +9,6 @@ button, input {
 	padding: .8rem 2rem;
 	font-weight: 400;
 	font-size: 1rem;
-	text-align: center;
 	cursor: pointer;
 	@include small-border;
 	white-space: nowrap;
