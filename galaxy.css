@@ -562,7 +562,7 @@ section[g~='reverse'] {
 *:hover {
   opacity: 1; }
 
-button, input[type="submit"] {
+button, input {
   /* If background is dark, then make color lighter */
   border: #d8d8d8 1px solid;
   background: #f2f2f2;
@@ -575,54 +575,54 @@ button, input[type="submit"] {
   border-radius: 3px;
   white-space: nowrap;
   /* BEM */ }
-  button:hover, input[type="submit"]:hover {
+  button:hover, input:hover {
     filter: none;
     box-shadow: none;
     background: #e5e5e5; }
-  button:active, input[type="submit"]:active {
+  button:active, input:active {
     background: #bfbfbf; }
-  button[g~="primary"]:hover, input[type="submit"][g~="primary"]:hover {
+  button[g~="primary"]:hover, input[g~="primary"]:hover {
     background: #71bcf0; }
-  button[g~="primary"]:active, input[type="submit"][g~="primary"]:active {
+  button[g~="primary"]:active, input[g~="primary"]:active {
     background: #1681cc; }
-  button[g~="success"]:hover, input[type="submit"][g~="success"]:hover {
+  button[g~="success"]:hover, input[g~="success"]:hover {
     background: #97e245; }
-  button[g~="success"]:active, input[type="submit"][g~="success"]:active {
+  button[g~="success"]:active, input[g~="success"]:active {
     background: #569117; }
-  button[g~="warning"]:hover, input[type="submit"][g~="warning"]:hover {
+  button[g~="warning"]:hover, input[g~="warning"]:hover {
     background: #ff8e34; }
-  button[g~="warning"]:active, input[type="submit"][g~="warning"]:active {
+  button[g~="warning"]:active, input[g~="warning"]:active {
     background: #b35000; }
-  button[g~="danger"]:hover, input[type="submit"][g~="danger"]:hover {
+  button[g~="danger"]:hover, input[g~="danger"]:hover {
     background: #fd0826; }
-  button[g~="danger"]:active, input[type="submit"][g~="danger"]:active {
+  button[g~="danger"]:active, input[g~="danger"]:active {
     background: #840111; }
-  button[disabled], input[type="submit"][disabled] {
+  button[disabled], input[disabled] {
     border: 0;
     background-image: none;
     opacity: .4;
     cursor: not-allowed;
     box-shadow: none; }
-  button[g~="grouped"], input[type="submit"][g~="grouped"] {
+  button[g~="grouped"], input[g~="grouped"] {
     position: relative;
     vertical-align: middle; }
-  button[g~="large"], input[type="submit"][g~="large"] {
+  button[g~="large"], input[g~="large"] {
     padding: 1.5rem 2.5rem;
     font-size: 1.3rem; }
-  button[g~="rounded"], input[type="submit"][g~="rounded"] {
+  button[g~="rounded"], input[g~="rounded"] {
     border-radius: 50%; }
-  button + ul[g~="dropdown"], input[type="submit"] + ul[g~="dropdown"] {
+  button + ul[g~="dropdown"], input + ul[g~="dropdown"] {
     display: block;
     border: #eee 1px solid;
     border-radius: 3px;
     padding: 1rem 0;
     width: 15rem; }
-    button + ul[g~="dropdown"] li, input[type="submit"] + ul[g~="dropdown"] li {
+    button + ul[g~="dropdown"] li, input + ul[g~="dropdown"] li {
       display: block;
       padding: .5rem 0; }
-      button + ul[g~="dropdown"] li:hover, input[type="submit"] + ul[g~="dropdown"] li:hover {
+      button + ul[g~="dropdown"] li:hover, input + ul[g~="dropdown"] li:hover {
         background: #eee; }
-  button [g~="small"], input[type="submit"] [g~="small"] {
+  button [g~="small"], input [g~="small"] {
     display: inline-block; }
 
 [g~="grouped"] {
