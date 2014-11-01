@@ -1,5 +1,3 @@
-/* COLOR */
-
 
 
 /* --- BORDERS */
@@ -152,7 +150,7 @@ $nav-color: #1683CC;
 
 /* --- Buttons */
 
-$default-color: #fff;
+$default-color: #f2f2f2;
 $primary-color: #43A6EB;
 $success-color: #7ed321;
 $warning-color: #FF7201;
@@ -207,4 +205,19 @@ $footer-background: #fff;
 	-moz-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+/* -- COLOR */
+
+[g~="primary"] {
+	@include button-colors($primary-color);
+}
+[g~="success"] {
+	@include button-colors($success-color);
+}
+[g~="warning"] {
+	@include button-colors($warning-color);
+}
+[g~="danger"] {
+	@include button-colors($danger-color);
 }

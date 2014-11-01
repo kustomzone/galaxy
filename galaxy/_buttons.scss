@@ -21,6 +21,46 @@ button, input[type="submit"] {
 	&:active {
 		background: darken($default-color, 20);
 	}
+
+	&[g~="primary"] {
+		&:hover {
+			background: lighten($primary-color, 10);
+		}
+		&:active {
+			background: darken($primary-color, 15);
+		}
+	}
+
+	&[g~="success"] {
+		
+		&:hover {
+			background: lighten($success-color, 10);
+		}
+		&:active {
+			background: darken($success-color, 15);
+		}
+	}
+
+	&[g~="warning"] {
+		
+		&:hover {
+			background: lighten($warning-color, 10);
+		}
+		&:active {
+			background: darken($warning-color, 15);
+		}
+	}
+
+	&[g~="danger"] {
+		&:hover {
+			background: lighten($danger-color, 10);
+		}
+		&:active {
+			background: darken($danger-color, 15);
+		}
+	}
+
+
 	&[disabled] {
 		border: 0;
 		background-image: none;
@@ -31,6 +71,13 @@ button, input[type="submit"] {
 	&[g~="grouped"] {
 		position: relative;
 		vertical-align: middle;
+	}
+	&[g~="large"] {
+		padding: 1.5rem 2.5rem;
+		font-size: 1.3rem;
+	}
+	&[g~="rounded"] {
+		border-radius: 3rem;
 	}
 	& + ul[g~="dropdown"] {
 		display: block;
@@ -52,46 +99,6 @@ button, input[type="submit"] {
 	/* BEM */
 	& [g~="small"] {
 		display: inline-block;
-	}
-}
-
-[g~="primary"] {
-	@include button-colors($primary-color);
-	&:hover {
-		background: lighten($primary-color, 10);
-	}
-	&:active {
-		background: darken($primary-color, 15);
-	}
-}
-
-[g~="success"] {
-	@include button-colors($success-color);
-	&:hover {
-		background: lighten($success-color, 10);
-	}
-	&:active {
-		background: darken($success-color, 15);
-	}
-}
-
-[g~="warning"] {
-	@include button-colors($warning-color);
-	&:hover {
-		background: lighten($warning-color, 10);
-	}
-	&:active {
-		background: darken($warning-color, 15);
-	}
-}
-
-[g~="danger"] {
-	@include button-colors($danger-color);
-	&:hover {
-		background: lighten($danger-color, 10);
-	}
-	&:active {
-		background: darken($danger-color, 15);
 	}
 }
 

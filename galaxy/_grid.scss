@@ -126,9 +126,6 @@ section[g~='reverse'] {
 	header > ul {
 		display: none;
 	}
-	[g~="centered"], [g~="center"] {
-		margin: auto;
-	}
 	[g~="xlg-container"] {
 	max-width: $md-breakpoint;
 	}
