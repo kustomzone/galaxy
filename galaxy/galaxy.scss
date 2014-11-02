@@ -23,3 +23,18 @@
 @import "galaxy/plugins/tooltips";
 
 /* ==== Parallax */
+
+
+
+[g~="primary"] {
+	@include button-colors($primary-color);
+}
+[g~="success"] {
+	@include button-colors($success-color);
+}
+[g~="warning"] {
+	@include button-colors($warning-color);
+}
+[g~="danger"] {
+	@include button-colors($danger-color);
+}
