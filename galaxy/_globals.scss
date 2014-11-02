@@ -158,6 +158,13 @@ $success-color: #7ed321;
 $warning-color: #FF7201;
 $danger-color: #d0021b;
 
+$light-default-color: #f2f2f2;
+$light-primary-color: #EBF7FD;
+$light-success-color: #F2FAE3;
+$light-warning-color: #FFFCEB;
+$light-danger-color: #FFF1F0;
+
+
 @mixin button-colors($button-color) {
 	/* If background is dark, then make color lighter */
 	border: darken($button-color, 10) 1px solid;
@@ -211,18 +218,6 @@ $footer-background: #fff;
 
 /* -- COLOR */
 
-[g~="primary"] {
-	@include button-colors($primary-color);
-}
-[g~="success"] {
-	@include button-colors($success-color);
-}
-[g~="warning"] {
-	@include button-colors($warning-color);
-}
-[g~="danger"] {
-	@include button-colors($danger-color);
-}
 
 /* --- SHADOW COLORS */
 

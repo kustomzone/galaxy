@@ -12,30 +12,6 @@
 /* --- FOOTER */
 /* --- MISC */
 /* -- COLOR */
-[g~="primary"] {
-  /* If background is dark, then make color lighter */
-  border: #1890e3 1px solid;
-  background: #43A6EB;
-  color: white; }
-
-[g~="success"] {
-  /* If background is dark, then make color lighter */
-  border: #64a71a 1px solid;
-  background: #7ed321;
-  color: white; }
-
-[g~="warning"] {
-  /* If background is dark, then make color lighter */
-  border: #cd5b00 1px solid;
-  background: #FF7201;
-  color: white; }
-
-[g~="danger"] {
-  /* If background is dark, then make color lighter */
-  border: #9d0214 1px solid;
-  background: #d0021b;
-  color: white; }
-
 /* --- SHADOW COLORS */
 /* --- BASE */
 /* --- BASE */
@@ -710,7 +686,7 @@ input[g~='transparent'] {
     box-shadow: none; }
 
 /* -- MISC */
-label {
+label[for] {
   padding: 1rem;
   cursor: pointer; }
 
@@ -842,19 +818,43 @@ nav[g~="grouped"][g~='dropdown'] > li:hover {
 
 /* Size */
 /* --- ALERTS */
+alert {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  font-size: .9rem;
+  color: #727272;
+  background: #f2f2f2;
+  border: #b2b2b2 1px solid; }
+  alert[g~="primary"] {
+    color: #1594d4;
+    background: #EBF7FD;
+    border: #77c9f1 1px solid; }
+  alert[g~="success"] {
+    color: #87bc22;
+    background: #F2FAE3;
+    border: #c0e777 1px solid; }
+  alert[g~="warning"] {
+    color: #ebc800;
+    background: #FFFCEB;
+    border: #ffe96c 1px solid; }
+  alert[g~="danger"] {
+    color: #f01000;
+    background: #FFF1F0;
+    border: #ff7a71 1px solid; }
+
 /* --- MISC */
-span {
+label:not([for]) {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: 700;
   line-height: 1;
-  background: #f2f2f2;
-  color: #6F6F6F;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em; }
+  border-radius: .25em;
+  text-transform: uppercase; }
 
 /* --- PLUGINS */
 /* ==== Tooltips */
@@ -1038,5 +1038,28 @@ span {
   margin-bottom: -16px; }
 
 /* ==== Parallax */
+[g~="primary"] {
+  /* If background is dark, then make color lighter */
+  border: #1890e3 1px solid;
+  background: #43A6EB;
+  color: white; }
+
+[g~="success"] {
+  /* If background is dark, then make color lighter */
+  border: #64a71a 1px solid;
+  background: #7ed321;
+  color: white; }
+
+[g~="warning"] {
+  /* If background is dark, then make color lighter */
+  border: #cd5b00 1px solid;
+  background: #FF7201;
+  color: white; }
+
+[g~="danger"] {
+  /* If background is dark, then make color lighter */
+  border: #9d0214 1px solid;
+  background: #d0021b;
+  color: white; }
 
 /*# sourceMappingURL=galaxy.css.map */

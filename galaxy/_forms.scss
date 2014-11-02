@@ -79,7 +79,7 @@ input[g~='transparent'] {
 }
 
 /* -- MISC */
-label {
+label[for] {
 	padding: $md-padding;
 	cursor: pointer;
 }
