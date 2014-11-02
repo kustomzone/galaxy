@@ -814,6 +814,19 @@ nav[g~="grouped"][g~='dropdown'] > li:hover {
 
 /* Size */
 /* --- ALERTS */
+/* --- MISC */
+label:not([for]) {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  text-transform: uppercase; }
+
 alert {
   padding: 1rem;
   width: 100%;
@@ -838,19 +851,6 @@ alert {
     color: #f01000;
     background: #FFF1F0;
     border: #ff7a71 1px solid; }
-
-/* --- MISC */
-label:not([for]) {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  text-transform: uppercase; }
 
 /* --- PLUGINS */
 /* ==== Tooltips */

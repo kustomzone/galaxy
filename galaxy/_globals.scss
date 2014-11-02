@@ -194,6 +194,14 @@ $brand-color: #43A6EB;
 }
 
 
+@mixin alert-color($color) {
+	color: darken($color, 50);
+	background: $color;
+	border: darken($color, 25) 1px solid;
+}
+
+
+
 
 /* --- FORMS */
 
