@@ -1,0 +1,21 @@
+# Site settings
+title: Galaxy
+email: galaxy@fang.ws
+description: Galaxy is a modern front-end framework based on semantic, conversational language. # Meta description used for Seo
+tagline: The modern front-end framework based on conversational language.
+
+url: "https://galaxyui.com"
+twitter: AndyFang98
+
+github_username: "Magmoz"
+github_repo: "galaxy"
+github: "//github.com/Magmoz/galaxy"
+
+logo: "/img/logo.svg"
+favicon: "/img/favicon.svg"
+version: 1.0
+
+
+# Build settings
+markdown: kramdown
+permalink: /:title
