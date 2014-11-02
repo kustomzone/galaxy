@@ -7,7 +7,6 @@
 /* --- GRID */
 /* --- Navbar */
 /* --- Buttons */
-/* --- TYPOGRAPHY */
 /* --- FORMS */
 /* --- FOOTER */
 /* --- MISC */
@@ -555,15 +554,15 @@ button, input {
   button:active, input:active {
     background: #bfbfbf; }
   button[g~="primary"]:hover, input[g~="primary"]:hover {
-    background: #71bcf0; }
+    background: #1890e3; }
   button[g~="primary"]:active, input[g~="primary"]:active {
     background: #1681cc; }
   button[g~="success"]:hover, input[g~="success"]:hover {
-    background: #97e245; }
+    background: #64a71a; }
   button[g~="success"]:active, input[g~="success"]:active {
     background: #569117; }
   button[g~="warning"]:hover, input[g~="warning"]:hover {
-    background: #ff8e34; }
+    background: #cd5b00; }
   button[g~="warning"]:active, input[g~="warning"]:active {
     background: #b35000; }
   button[g~="danger"]:hover, input[g~="danger"]:hover {
