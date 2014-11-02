@@ -1,8 +1,12 @@
-guard 'jekyll-plus', :serve => true do
-  watch /.*/
-  ignore /^_site/
+group :development do
+  gem 'guard-livereload', require: false
 end
 
 guard 'livereload' do
-  watch /.*/
+  watch(%r{app/views/.+\.(erb|haml|slim)$})
+  watch(%r{app/helpers/.+\.rb})
+  watch(%r{public/.+\.(css|js|html)})
+  watch(%r{config/locales/.+\.yml})
+  # Rails Assets Pipeline
+  watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html|png|jpg))).*}) { |m| "/assets/#{m[3]}" }
 end
