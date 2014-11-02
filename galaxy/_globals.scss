@@ -172,17 +172,6 @@ $light-danger-color: #FFF1F0;
 	color: lighten(contrast-color($button-color), 50);
 }
 
-/* --- TYPOGRAPHY */
-
-$brand-color: #43A6EB;
-@function contrast-color($bg-color) {
-	@if lightness($bg-color) > 90 {
-		@return #000;
-	} @else {
-		@return #fff;
-	}
-}
-
 @function contrast-border($bg-color) {
 	@if lightness($bg-color) > 90 {
 		@return #eee;
@@ -194,6 +183,17 @@ $brand-color: #43A6EB;
 		@return black;
 	}
 }
+
+$brand-color: #43A6EB;
+@function contrast-color($bg-color) {
+	@if lightness($bg-color) > 90 {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
+}
+
+
 
 /* --- FORMS */
 
