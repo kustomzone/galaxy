@@ -5,7 +5,6 @@
 /* Base styles for the element that has a tooltip */
 [data-tooltip],
 [g~="tooltip"] {
-  position: relative;
   cursor: pointer;
   display: inline-block;
 }
@@ -17,18 +16,16 @@
 [g~="tooltip"]:after {
   position: absolute;
   visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: 
+  -webkit-transition:
     opacity 0.2s ease-in-out,
     visibility 0.2s ease-in-out,
     -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-  -moz-transition:    
+  -moz-transition:
     opacity 0.2s ease-in-out,
     visibility 0.2s ease-in-out,
     -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-  transition:         
+  transition:
     opacity 0.2s ease-in-out,
     visibility 0.2s ease-in-out,
     transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
@@ -117,7 +114,7 @@
 [g~="tooltip"][g~="top"]:focus:after {
   -webkit-transform: translateY(-12px);
   -moz-transform:    translateY(-12px);
-  transform:         translateY(-12px); 
+  transform:         translateY(-12px);
 }
 
 /* Left */
@@ -143,7 +140,7 @@
 [g~="tooltip"][g~="left"]:focus:after {
   -webkit-transform: translateX(-12px);
   -moz-transform:    translateX(-12px);
-  transform:         translateX(-12px); 
+  transform:         translateX(-12px);
 }
 
 /* Bottom */
@@ -168,7 +165,7 @@
 [g~="tooltip"][g~="bottom"]:focus:after {
   -webkit-transform: translateY(12px);
   -moz-transform:    translateY(12px);
-  transform:         translateY(12px); 
+  transform:         translateY(12px);
 }
 
 /* Right */
@@ -192,7 +189,7 @@
 [g~="tooltip"][g~="right"]:focus:after {
   -webkit-transform: translateX(12px);
   -moz-transform:    translateX(12px);
-  transform:         translateX(12px); 
+  transform:         translateX(12px);
 }
 
 /* Move directional arrows down a bit for left/right tooltips */

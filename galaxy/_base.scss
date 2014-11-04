@@ -29,7 +29,7 @@ a:hover {
 }
 
 i:after {
-	content: "\00a0"
+	content: "\00a0"; /* Spacing around font-awesome and the such */
 }
 
 $headings: h1 h2 h3 h4 h5 h6;
@@ -55,17 +55,9 @@ hr {
 
 img {
 	display: block;
-	max-width: 100%;
-	height: auto;
 }
 
-@media (max-width: 768px) {
-	img {
-		height: auto;
-	}
-}
-
-disabled {
+[disabled] {
 	border: 1px solid #ccc;
 	background-color: #fff;
 }

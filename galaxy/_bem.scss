@@ -6,6 +6,11 @@
 	display: inline-block;
 }
 
+/* Sizes */
+[g~="large"] {
+	padding: 1.5rem 2.5rem;
+}
+
 /* Padding */
 
 [g~="xsm-padding"] {
@@ -28,7 +33,7 @@
 	padding: 4rem
 }
 
-[fixed], [g~="fixed"] {
+[g~="fixed"] {
 	position: fixed;
 }
 
