@@ -5,7 +5,6 @@ body {
   background: #fff; }
 
 header {
-  opacity: .9;
   transition-duration: .5s; }
 
 .jumbotron {
