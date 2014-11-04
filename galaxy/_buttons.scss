@@ -12,6 +12,7 @@ button, input[type="submit"] {
 	cursor: pointer;
 	@include small-border;
 	white-space: nowrap;
+	height: 100%;
 	&:hover {
 		filter: none;		
 		box-shadow: none;
