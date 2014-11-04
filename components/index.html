@@ -45,36 +45,44 @@ $(document).ready(function() {
 
         <div class="components"><input id="components" type="text" placeholder="All components" autocomplete="off" maxlength="20" required="required" autofocus="autofocus"/></div>
 <div id="body" g="xlg-container" class="grid">
+<!-- 
+	<aside g="4">
+		<ul>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+		</ul>
+	</aside>
+-->
+
+	<div>
 	<!-- GALAXY GRID -->
-<section class="grid-demo"><h1 centered="centered">Galaxy Grid</h1>
-	<section>
+<div>
+	<h1 centered="centered">Galaxy Grid</h1>
+	<section class="grid-demo">
+		<!-- Row 1 -->
 		<div g="1">1</div>
 		<div g="11">11</div>
-	</section>
-	<section>
+		<!-- Row 2 -->
 		<div g="2">2</div>
 		<div g="10">10</div>
-	</section>
-	<section>
+		<!-- Row 3 -->
 		<div g="3">3</div>
 		<div g="9">9</div>
-	</section>
-	<section>
+		<!-- Row 4 -->
 		<div g="4">4</div>
 		<div g="8">8</div>
-	</section>
-	<section>
+		<!-- Row 5 -->
 		<div g="5">5</div>
 		<div g="7">7</div>
-	</section>
-	<section>
+		<!-- Row 6 -->
 		<div g="6">6</div>
 		<div g="6">6</div>
-	</section>
-	<section>
+		<!-- Row 7 (Full row) -->
 		<div g="12">12</div>
 	</section>
-</section>
+</div>
 	<!-- BUTTONS -->
 <div id="buttons" g="between xlg-container" class="buttons after-grid">
 <h1>Buttons</h1>
@@ -86,7 +94,7 @@ $(document).ready(function() {
 		<button g="danger">Danger Button</button>
 		<button disabled>Disabled Button</button>
 	</section>
-	<section>
+	<section g="centered">
 	<h2 g="12">Sizes</h2>
 		<button>Default button</button>
 		<button g="small">Small button</button>
@@ -115,9 +123,12 @@ $(document).ready(function() {
 	<label g="warning">Warning label</label>
 </section>
 	<section>
-	
+	<a data-tooltip="This is a tooltip">This is a tooltip</a>
 </section>
+	</div>
 </div>
+
+
 
     <footer>
 		<ul g="centered">
