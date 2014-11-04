@@ -47,6 +47,9 @@ $lg-padding: 2rem;
 	border-radius: 3px;
 }
 
+/* --- TYPOGRAPHY */
+
+
 /* --- GRID */
 
 @mixin grid_columns {
@@ -95,10 +98,8 @@ $lg-padding: 2rem;
 	text-align: center;
 }
 
-@mixin display-flex {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+@mixin display($value) {
+	display: $value;
 }
 
 @mixin align-items($value) {
