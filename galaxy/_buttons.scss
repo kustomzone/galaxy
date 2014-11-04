@@ -15,7 +15,7 @@ button, input {
 	&:hover {
 		filter: none;
 		box-shadow: none;
-		background: lighten($default-color, 5);
+		background: darken($default-color, 5);
 	}
 	&:active {
 		background: darken($default-color, 20);
