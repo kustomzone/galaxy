@@ -15,7 +15,7 @@ button, input {
 	&:hover {
 		filter: none;
 		box-shadow: none;
-		background: darken($default-color, 5);
+		background: lighten($default-color, 5);
 	}
 	&:active {
 		background: darken($default-color, 20);
@@ -23,7 +23,7 @@ button, input {
 
 	&[g~="primary"] {
 		&:hover {
-			background: darken($primary-color, 10);
+			background: lighten($primary-color, 10);
 		}
 		&:active {
 			background: darken($primary-color, 15);
@@ -33,7 +33,7 @@ button, input {
 	&[g~="success"] {
 		
 		&:hover {
-			background: darken($success-color, 10);
+			background: lighten($success-color, 10);
 		}
 		&:active {
 			background: darken($success-color, 15);
@@ -43,7 +43,7 @@ button, input {
 	&[g~="warning"] {
 		
 		&:hover {
-			background: darken($warning-color, 10);
+			background: lighten($warning-color, 10);
 		}
 		&:active {
 			background: darken($warning-color, 15);

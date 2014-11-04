@@ -550,19 +550,19 @@ button, input {
   button:hover, input:hover {
     filter: none;
     box-shadow: none;
-    background: #e5e5e5; }
+    background: white; }
   button:active, input:active {
     background: #bfbfbf; }
   button[g~="primary"]:hover, input[g~="primary"]:hover {
-    background: #1890e3; }
+    background: #71bcf0; }
   button[g~="primary"]:active, input[g~="primary"]:active {
     background: #1681cc; }
   button[g~="success"]:hover, input[g~="success"]:hover {
-    background: #64a71a; }
+    background: #97e245; }
   button[g~="success"]:active, input[g~="success"]:active {
     background: #569117; }
   button[g~="warning"]:hover, input[g~="warning"]:hover {
-    background: #cd5b00; }
+    background: #ff8e34; }
   button[g~="warning"]:active, input[g~="warning"]:active {
     background: #b35000; }
   button[g~="danger"]:hover, input[g~="danger"]:hover {
