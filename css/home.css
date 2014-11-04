@@ -13,9 +13,8 @@ header {
   background-repeat: no-repeat;
   letter-spacing: 1px;
   padding: 3rem 1rem; }
-
-.jumbotron h1 {
-  padding: 4rem; }
+  .jumbotronh1 {
+    padding: 4rem; }
 
 .opening {
   background: #1683CC;
@@ -78,5 +77,8 @@ header {
 section#body {
   padding-bottom: 3rem;
   border-top: #ddd 1px solid; }
+
+.github-buttons {
+  padding: 2.5rem 0; }
 
 /*# sourceMappingURL=home.css.map */

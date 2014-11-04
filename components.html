@@ -4,10 +4,24 @@ permalink: components/
 ---
 <div class="components"><input id="components" type="text" placeholder="All components" autocomplete="off" maxlength="20" required="required" autofocus="autofocus"/></div>
 <div id="body" g="xlg-container" class="grid">
+<!-- 
+	<aside g="4">
+		<ul>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+		</ul>
+	</aside>
+-->
+
+	<div>
 	{% include components/grid.html %}
 	{% include components/buttons.html %}
 	{% include components/forms.html %}
 	{% include components/alerts.html %}
 	{% include components/labels.html %}
 	{% include components/tooltips.html %}
+	</div>
 </div>
+
