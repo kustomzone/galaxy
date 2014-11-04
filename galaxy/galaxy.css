@@ -550,7 +550,7 @@ button, input {
   button:hover, input:hover {
     filter: none;
     box-shadow: none;
-    background: white; }
+    background: #e5e5e5; }
   button:active, input:active {
     background: #bfbfbf; }
   button[g~="primary"]:hover, input[g~="primary"]:hover {
