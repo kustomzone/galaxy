@@ -1,14 +1,13 @@
+[g~="inline-block"] {
+	display: inline-block !important;
+}
+
 [g~="inline"] {
-	display: inline-flex;
+	display: inline !important;
 }
 
 [g~="block"] {
-	display: inline-block;
-}
-
-/* Sizes */
-[g~="large"] {
-	padding: 1.5rem 2.5rem;
+	display: block !important;
 }
 
 /* Padding */
@@ -39,3 +38,16 @@
 
 /* Size */
 
+// Float
+
+[g~="centered"] {
+	@include center;
+}
+
+[g~="left"] {
+	text-align: center;
+}
+
+[g~="right"] {
+	text-align: right;
+}

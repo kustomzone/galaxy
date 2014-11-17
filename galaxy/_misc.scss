@@ -1,7 +1,9 @@
+@import "misc/alerts";
+
 label:not([for]) {
 	display: inline;
 	padding: .2em .6em .3em;
-	font-size: .8rem;
+	font-size: .8em;
 	font-weight: 700;
 	line-height: 1;
 	text-align: center;
@@ -9,24 +11,22 @@ label:not([for]) {
 	vertical-align: baseline;
 	border-radius: .25em;
 	text-transform: uppercase;
+	border: #eee 1px solid;
 }
 
-alert {
-	padding: 1rem;
-	width: 100%;
-	border-radius: $md-border-radius;
-	font-size: .9rem;
-	@include alert-color($light-default-color);
-	&[g~="primary"] {
-		@include alert-color($light-primary-color);
-	}
-	&[g~="success"] {
-		@include alert-color($light-success-color);
-	}
-	&[g~="warning"] {
-		@include alert-color($light-warning-color);
-	}
-	&[g~="danger"] {
-		@include alert-color($light-danger-color);
-	}
+.light {
+	width: 50%;
+    height: 10em;
+    float: right;
+    border: .5em solid black;
+    background-color: gray;
+    transition: .5s all ease-in-out;
+    text-align: center;
+    &.active {
+    	background: $primary-color;
+    }
+}
+
+code {
+	
 }

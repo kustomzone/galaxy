@@ -5,16 +5,18 @@ opacity: 1;
 }
 
 button, input[type="submit"] {
+	border: $default-color 1px solid;
 	@include button-colors($default-color);
-	padding: .8rem 2rem;
+	padding: .8em 2em;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: .9em;
 	cursor: pointer;
 	@include small-border;
 	white-space: nowrap;
 	height: 100%;
+	text-align: center;
 	&:hover {
-		filter: none;		
+		filter: none;
 		box-shadow: none;
 		background: darken($default-color, 5);
 	}
@@ -62,8 +64,7 @@ button, input[type="submit"] {
 		}
 	}
 
-
-	&[disabled] {
+	&[g~="disabled"] {
 		border: 0;
 		background-image: none;
 		opacity: .4;
@@ -76,38 +77,40 @@ button, input[type="submit"] {
 		vertical-align: middle;
 	}
 	&[g~="large"] {
-		padding: 1.5rem 2.5rem;
-		font-size: 1.3rem;
+		padding: 1.5em 2.5em;
+		font-size: 1.3em;
 	}
 	&[g~="small"] {
-		padding: .5rem 1.5rem;
-		font-size: .9rem;
+		padding: .5em 1.5em;
+		font-size: .9em;
 	}
 	&[g~="rounded"] {
-		border-radius: 50%;
+		border-radius: $lg-border-radius;
 	}
-	& + ul[g~="dropdown"] {
-		display: block;
-		border: #eee 1px solid;
-		border-radius: 3px;
-		padding: 1rem 0;
-		width: 15rem;
-
-		& li {
-			display: block;
-			padding: .5rem 0;
-
-			&:hover {
-				background: #eee;
+	&[g~="dropdown"] {
+		 + ul {
+			top: 100%;
+			left: 0;
+			@include border-box;
+			width: 200px;
+			background: #FFF;
+			color: #666;
+			vertical-align: top;
+			border: 1px solid #D3D3D3;
+			border-radius: 4px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			padding: 0;
+				& li {
+					display: block;
+					padding: $sm-margin $lg-margin;
+					cursor: pointer;
+					&:hover {
+						background: #eee;
+					}
+				}
 			}
 		}
 	}
-
-	/* BEM */
-	& [g~="small"] {
-		display: inline-block;
-	}
-}
 
 [g~="grouped"] {
 	width: 100vw;

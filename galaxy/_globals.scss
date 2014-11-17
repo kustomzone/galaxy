@@ -37,11 +37,16 @@ $high-opacity: .7;
 $md-opacity: .8;
 $low-opacity: .9;
 
-/* --- PADDING */
+/* --- PADDING & MARGIN */
 
-$sm-padding: .5rem;
-$md-padding: 1rem;
-$lg-padding: 2rem;
+$sm-padding: .5em;
+$md-padding: 1em;
+$lg-padding: 2em;
+
+$sm-margin: .5em;
+$md-margin: 1em;
+$lg-margin: 1.5em;
+
 @mixin small-border {
 	border: #ddd 1px solid;
 	border-radius: 3px;
@@ -49,53 +54,15 @@ $lg-padding: 2rem;
 
 /* --- TYPOGRAPHY */
 
+$monospace: "'Source Code Pro', monospace";
 
 /* --- GRID */
 
-@mixin grid_columns {
-	@for $i from 1 through 12 {
-		$size: ($i/12) * 100%;
-		[g~="#{$i}"] {
-			-webkit-flex-basis: $size;
-			-ms-flex-preferred-size: $size;
-			flex-basis: $size;
-			max-width: $size;
-		}
-	}
-}
-
-@mixin grid_push_left {
-	@for $i from 1 through 12 {
-		$size: ($i/12) * 100%;
-
-		[g~="left"][g~="#{$i}"] {
-			-webkit-flex-basis: $size;
-			-ms-flex-preferred-size: $size;
-			flex-basis: $size;
-			max-width: $size;
-			margin-right: 100% - $size;
-		}
-	}
-}
-
-@mixin grid_push_right {
-	@for $i from 1 through 12 {
-		$size: ($i/12) * 100%;
-
-		[g~="right"][g~="#{$i}"] {
-			-webkit-flex-basis: $size;
-			-ms-flex-preferred-size: $size;
-			flex-basis: $size;
-			max-width: $size;
-			margin-left: 100% - $size;
-		}
-	}
-}
-
 @mixin center {
-	-webkit-align-items: center;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin: auto;
 }
 
 @mixin display($value) {
@@ -154,10 +121,10 @@ $nav-color: #1683CC;
 /* --- Buttons */
 
 $default-color: #f2f2f2;
-$primary-color: #43A6EB;
-$success-color: #7ed321;
-$warning-color: #FF7201;
-$danger-color: #d0021b;
+$primary-color: #5890FF;
+$success-color: #c1d82f;
+$warning-color: #fbb034;
+$danger-color: #E72A2A;
 
 $light-default-color: #f2f2f2;
 $light-primary-color: #EBF7FD;
@@ -165,10 +132,32 @@ $light-success-color: #F2FAE3;
 $light-warning-color: #FFFCEB;
 $light-danger-color: #FFF1F0;
 
+/* Animate */
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
+@mixin fade ($duration: 0.2s) {
+  @include transition(opacity $duration linear, visibility $duration linear);
+}
+
+@mixin transform($string){
+  -webkit-transform: $string;
+     -moz-transform: $string;
+      -ms-transform: $string;
+       -o-transform: $string;
+          transform: $string;
+}
+
 
 @mixin button-colors($button-color) {
 	/* If background is dark, then make color lighter */
-	border: darken($button-color, 10) 1px solid;
+	border-color: darken($button-color, 10);
 	background: $button-color;
 	color: lighten(contrast-color($button-color), 50);
 }
@@ -202,13 +191,11 @@ $brand-color: #43A6EB;
 }
 
 
-
-
 /* --- FORMS */
 
 /* --- FOOTER */
 
-$footer-background: #fff;
+$footer-background: #000;
 
 /* --- MISC */
 
@@ -230,5 +217,5 @@ $footer-background: #fff;
 
 /* --- SHADOW COLORS */
 
-$dark-grey: #afafaf;
+$dark-grey: #383838;
 $light-grey: #ddd;

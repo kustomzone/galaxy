@@ -6,21 +6,19 @@
 
 body {
 	font-family: "Proxima Nova", "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 1.25rem; /* Default size for copy, but rem units still reference 16px */
 	outline: 0;
 	margin: 0;
 	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+	line-height: 2em;
 }
 
 a {
 	color: $primary-color;
 	opacity: $md-opacity;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
@@ -34,62 +32,89 @@ i:after {
 $headings: h1 h2 h3 h4 h5 h6;
 @each $heading in $headings {
 	$i: index($headings, $heading);
-	$i-weight: $i * 100;
 	#{$heading} {
+		font-weight: 300;
+		line-height: 1.3em;
 		font-size: 2.7em - $i / 3;
-		@if ($i-weight < 200) {
-			font-weight: 500 - $i-weight;
-		} @else {
-			font-weight: 300;
-		}
+		width: 100%;
 	}
 }
 
 hr {
-	display: block;
-	width: 10vw;
+	width: 10em;
 	margin: 1rem auto 1rem auto;
 	border: #eee 1px solid;
 }
 
-img {
-	display: block;
+button {
+    overflow: visible
 }
-
-[disabled] {
-	border: 1px solid #ccc;
-	background-color: #fff;
+button, select {
+    text-transform: none
 }
-
-button,
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+button[disabled], html input[disabled] {
+    cursor: default
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+input {
+    line-height: normal
+}
+input[type="checkbox"], input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
 fieldset {
-	border: #eee 1px solid;
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+legend {
+    border: 0;
+    padding: 0
+}
+textarea {
+    overflow: auto
+}
+optgroup {
+    font-weight: 700
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+td, th {
+    padding: 0
+}
+
+p {
+	margin-top: $md-margin;
+}
+
+img {
+	max-width: 100%;
 }
 
 li {
-	list-style: none;
-	display: inline;
-}
-
-code {
-	border: #eee 1px solid;
-	border-radius: 3px;
-	padding: 5px;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
-}
-
-aside {
-	@include display(flex);
-	@include order(3);
-	@include flex-direction(column);
-	background: #000;
-	@include center;
-	-webkit-flex: none;
-	-moz-flex: none;
-	-ms-flex: none;
-	-o-flex: none;
-	flex: none;
+	list-style-type: none;
 }

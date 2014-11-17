@@ -1,3 +1,5 @@
+## Galaxy is currently in alpha so while it's not ready for production, we want your contributions. Any bug fixes between now and November 25th will earn you a spot on the contributors list.
+
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Magmoz/galaxy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 # Table of Contents

@@ -11,9 +11,13 @@ header {
 	width: 100%;
 	& ul {
 		@include align-items(center);
-		& li, a {
-			margin: 0 2rem;
+		& li {
+			display: inline;
+			line-height: 5em;
+			margin: 0 2em;
 			color: darken(contrast-color($nav-color), 10);
+			& a {
+				color: darken(contrast-color($nav-color), 10);
 				&:hover:not([g~="active"]) {
 				@if (lightness($nav-color) > 50) {
 						/* Lighter navs should have darker feedback */
@@ -26,11 +30,19 @@ header {
 				&:active, [g~="active"] {
 					color: $primary-color;
 				}
+			}
 		}
 	}
 
 	&[g~="fixed"] {
 		width: 100%;
+	}
+
+	& img {
+		display: inline;
+		height: 3em;
+		width: auto;
+		vertical-align: middle;
 	}
 }
 
@@ -41,12 +53,17 @@ header {
 footer {
 	width: 100%;
 	bottom: 0;
-	margin-top: 3rem;
-	padding: 5rem 0;
+	margin-top: 3em;
+	padding: 5em 0;
+	height: 10em;
 	text-align: center;
 	border-top: lighten(contrast-color($footer-background), 90) 1px solid;
 	color: darken(contrast-color($footer-background), 20);
 	background: $footer-background;
+	line-height: 0;
+	& ul {
+		padding-top: $md-padding;
+	}
 }
 
 /* Drop down */
@@ -67,7 +84,7 @@ nav[g~='grouped'] > ul {
 	font-size: 13px;
 	position: absolute;
 	float: left;
-	min-width: 7rem;
+	min-width: 7em;
 	margin: 15px 0 0;
 	padding: 10px 0;
 	border: 1px solid #c1cbd2;
@@ -89,8 +106,8 @@ nav[g~='grouped'] > ul {
 
 nav[g~="grouped"] {
 	& > ul {
-		margin-top: 3rem;
-		margin-left: 5.5rem;
+		margin-top: 3em;
+		margin-left: 5.5em;
 	}
 	& > span[g~="arrow"] {
 		left: 50%;
