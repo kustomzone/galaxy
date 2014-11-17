@@ -7,11 +7,11 @@ Uploading this master zip dated 12th November, which is newer than other forks o
 
 # Table of Contents
 - [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Reporting a Bug](#reporting-a-bug)
+- [Installation](#installation)- [Reporting a Bug](#reporting-a-bug)
 
-- [Creadits](#credits)
+- [Credits](#credits)
 - 
+
 
 
 
